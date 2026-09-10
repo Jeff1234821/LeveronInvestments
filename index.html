@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#16191d">
+<meta name="description" content="Leveron Investments LLC — construction, HVAC repair and maintenance, and property improvement services in Katy and Greater Houston, Texas.">
+<title>Leveron Investments LLC | Construction & HVAC</title>
+<style>
+:root{--bg:#f3f4f5;--ink:#17191d;--muted:#6b7178;--line:#d8dadd;--dark:#15181c;--silver:#b9bec4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.container{width:min(1160px,calc(100% - 34px));margin:auto}.top{background:#0e1013;color:#c6cacf;text-align:center;padding:9px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+header{position:sticky;top:0;z-index:30;background:rgba(243,244,245,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.08)}
+.navwrap{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit}.logo{width:44px;height:44px;border-radius:50%;background:linear-gradient(145deg,#f0f1f2,#70767d);display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.15)}.logo:before{content:"LI";width:34px;height:34px;border-radius:50%;background:#1a1d21;color:#d9dde0;display:grid;place-items:center;font-weight:800;letter-spacing:-1px}.brand b{font-size:21px;letter-spacing:-.04em}.brand small{display:block;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#777;margin-top:2px}
+nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;color:#33383e;font-weight:700;font-size:13px}.cta-nav{background:#202328;color:#fff!important;padding:11px 15px;border-radius:999px}
+.menu{display:none;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 11px;font-size:20px}
+.hero{min-height:690px;display:grid;align-items:center;background:radial-gradient(circle at 80% 20%,#fff 0,#dfe2e5 38%,#b8bdc2 100%);position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.22) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.22) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(#000,transparent)}
+.herogrid{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center;padding:70px 0}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;color:#6d737a}.hero h1,.section h2{font-weight:900;letter-spacing:-.055em;line-height:.98;margin:13px 0 20px}.hero h1{font-size:clamp(54px,7vw,94px)}.hero h1 span{color:#6d747b}.lead{font-size:18px;line-height:1.7;color:#535a61;max-width:720px}.actions{display:flex;gap:12px;margin:30px 0}.btn{display:inline-block;text-decoration:none;border:0;border-radius:12px;padding:14px 19px;font-weight:800;font-size:13px;cursor:pointer}.primary{background:linear-gradient(135deg,#1b1e22,#646b73);color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.18)}.secondary{background:rgba(255,255,255,.7);color:#25292e;border:1px solid rgba(0,0,0,.1)}
+.panel{background:linear-gradient(145deg,#1b1e22,#3c4249);color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:28px;padding:28px;box-shadow:0 30px 70px rgba(0,0,0,.24)}.paneltop{font-size:12px;color:#c6cbd0}.stat{font-size:70px;font-weight:900;margin:30px 0 5px;letter-spacing:-.06em}.statlabel{font-size:12px;color:#b4bac0}.mini{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:26px}.mini div{background:#282c31;border-radius:15px;padding:15px}.mini b{display:block;font-size:15px}.mini span{font-size:11px;color:#afb4b9}
+.section{padding:90px 0}.section h2{font-size:clamp(38px,5vw,60px)}.intro{max-width:780px;color:var(--muted);line-height:1.75}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}.card{background:#fff;border:1px solid #e0e2e5;border-radius:21px;padding:25px;min-height:285px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(0,0,0,.03)}.card.dark{background:linear-gradient(145deg,#1b1e22,#4b5158);color:#fff}.icon{font-size:29px;margin-bottom:35px}.card h3{margin:0 0 10px;font-size:21px}.card p{font-size:13px;color:#70767d;line-height:1.7;flex:1}.card.dark p{color:#c8ccd0}.card a{font-size:12px;font-weight:800;text-decoration:none}
+.about{background:#171a1e;color:#fff}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about p{color:#c0c5ca;line-height:1.75}.addressbox{margin-top:25px;padding:20px;border-radius:17px;background:#22262b;border:1px solid #3b4046}.addressbox small{color:#858b92;text-transform:uppercase;letter-spacing:.13em;font-size:9px}.addressbox b{display:block;margin-top:6px;line-height:1.55}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:25px}.step{padding:24px 18px;border-right:1px solid var(--line)}.step:last-child{border-right:0}.step span{font-size:10px;color:#8a9097;font-weight:800}.step h3{font-size:18px;margin:13px 0 7px}.step p{font-size:12px;color:#70767d;line-height:1.65}
+.contactgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}.contactinfo{display:grid;gap:14px;margin-top:26px}.contactinfo div{border-top:1px solid var(--line);padding-top:12px}.contactinfo span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:#888e94}.contactinfo b{font-size:13px}
+form{background:#fff;border:1px solid #dfe2e5;border-radius:24px;padding:28px;box-shadow:0 20px 50px rgba(0,0,0,.06)}label{display:block;font-size:11px;font-weight:800;color:#565c63;margin-bottom:14px}input,select,textarea{width:100%;margin-top:7px;padding:13px 14px;border:1px solid #d2d6da;border-radius:10px;background:#fff;outline:none}input:focus,select:focus,textarea:focus{border-color:#858b92;box-shadow:0 0 0 3px rgba(90,97,104,.12)}.formrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}.status{font-size:11px;color:#676d74;min-height:18px;margin-top:10px}
+footer{background:#101216;color:#9da3aa;padding:32px 0}.footerflex{display:flex;justify-content:space-between;gap:20px;align-items:center}.footerflex p{font-size:10px}.note{font-size:10px;color:#8a9097;margin-top:18px}
+@media(max-width:900px){nav{display:none;position:absolute;top:76px;left:17px;right:17px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;flex-direction:column;align-items:stretch}nav.open{display:flex}.menu{display:block}.herogrid,.aboutgrid,.contactgrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:560px){.top{font-size:9px}.navwrap{height:68px}.hero{min-height:780px}.hero h1{font-size:50px}.lead{font-size:15px}.actions,.formrow,.footerflex{grid-template-columns:1fr;display:grid}.btn{text-align:center}.cards,.steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)}.section{padding:68px 0}.section h2{font-size:39px}.mini{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="top">Katy & Greater Houston, Texas • Construction • HVAC • Property Services</div>
+
+<header>
+  <div class="container navwrap">
+    <a class="brand" href="#top">
+      <span class="logo"></span>
+      <span><b>Leveron</b><small>Investments LLC</small></span>
+    </a>
+    <button class="menu" id="menu">☰</button>
+    <nav id="nav">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="cta-nav">Request Service</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="container herogrid">
+    <div>
+      <div class="eyebrow">Construction • HVAC • Maintenance</div>
+      <h1>Reliable work.<br><span>Professional results.</span></h1>
+      <p class="lead">Leveron Investments LLC provides construction, air-conditioning repair and maintenance, and property improvement services for residential and commercial clients in Katy and the Greater Houston area.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Request a Quote</a>
+        <a class="btn secondary" href="#services">View Services</a>
+      </div>
+    </div>
+    <aside class="panel">
+      <div class="paneltop">● Serving Katy & Greater Houston</div>
+      <div class="stat">2.5+</div>
+      <div class="statlabel">Years in business</div>
+      <div class="mini">
+        <div><b>HVAC Repair</b><span>Diagnostics & service</span></div>
+        <div><b>Maintenance</b><span>Routine system care</span></div>
+        <div><b>Construction</b><span>General project work</span></div>
+        <div><b>Improvements</b><span>Repairs & upgrades</span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="eyebrow">What we do</div>
+    <h2>Services built around the needs of your property.</h2>
+    <p class="intro">From air-conditioning problems to construction and ongoing property maintenance, we focus on practical solutions, clear communication, and professional service.</p>
+    <div class="cards">
+      <article class="card dark"><div class="icon">❄</div><h3>Air-Conditioning Repair</h3><p>Diagnostics, troubleshooting, cooling-system repair, airflow issues, and service for residential and commercial properties.</p><a href="#contact">Request HVAC repair →</a></article>
+      <article class="card"><div class="icon">⚙</div><h3>HVAC Maintenance</h3><p>Routine maintenance and system checks designed to support reliable operation, efficiency, and equipment longevity.</p><a href="#contact">Schedule maintenance →</a></article>
+      <article class="card"><div class="icon">▦</div><h3>Construction Services</h3><p>General construction, repair, improvement, and project work for residential and commercial properties.</p><a href="#contact">Discuss a project →</a></article>
+      <article class="card"><div class="icon">⌂</div><h3>Property Improvements</h3><p>Repairs, upgrades, finishing work, and practical improvements tailored to your property.</p><a href="#contact">Request an estimate →</a></article>
+      <article class="card"><div class="icon">◇</div><h3>Repair & Maintenance</h3><p>General property repair and maintenance services that help keep spaces functional and presentable.</p><a href="#contact">Request service →</a></article>
+      <article class="card"><div class="icon">↗</div><h3>Project Support</h3><p>Scope review, coordination, and hands-on support for property improvement and repair projects.</p><a href="#contact">Start a project →</a></article>
+    </div>
+    <p class="note">Certain HVAC or specialty-trade work may be subject to Texas licensing requirements. Services are offered and performed only as permitted by applicable law and licensing rules.</p>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container aboutgrid">
+    <div>
+      <div class="eyebrow">About Leveron</div>
+      <h2>A Texas company focused on dependable work and long-term value.</h2>
+    </div>
+    <div>
+      <p>Leveron Investments LLC serves clients who need responsive help with construction, air-conditioning repair and maintenance, and property improvements.</p>
+      <p>Our process is straightforward: understand the problem, define the scope, communicate clearly, and complete the work with attention to quality and reliability.</p>
+      <div class="addressbox">
+        <small>Business address</small>
+        <b>24044 Cinco Village Center Blvd., Suite 100<br>Katy, TX 77494</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="container">
+    <div class="eyebrow">How it works</div>
+    <h2>From first call to finished work.</h2>
+    <div class="steps">
+      <div class="step"><span>01</span><h3>Tell us what you need</h3><p>Describe the issue, project, property type, and preferred timing.</p></div>
+      <div class="step"><span>02</span><h3>Review the scope</h3><p>We evaluate the request and identify the most practical next step.</p></div>
+      <div class="step"><span>03</span><h3>Approve the plan</h3><p>Confirm the expected work and scheduling before starting.</p></div>
+      <div class="step"><span>04</span><h3>Complete the work</h3><p>We perform the agreed work and keep communication straightforward.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container contactgrid">
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h2>Request service or a project estimate.</h2>
+      <p class="intro">Complete the form below. The website will prepare a professional email request on your device.</p>
+      <div class="contactinfo">
+        <div><span>Business</span><b>Leveron Investments LLC</b></div>
+        <div><span>Address</span><b>24044 Cinco Village Center Blvd., Suite 100<br>Katy, TX 77494</b></div>
+        <div><span>Service area</span><b>Katy • Greater Houston • Surrounding areas</b></div>
+        <div><span>Email</span><b id="emailDisplay">Add your business email below in the code</b></div>
+        <div><span>Phone</span><b id="phoneDisplay">Add your business phone below in the code</b></div>
+      </div>
+    </div>
+
+    <form id="contactForm">
+      <div class="formrow">
+        <label>Name<input required name="name" placeholder="Your name"></label>
+        <label>Phone<input name="phone" placeholder="Your phone number"></label>
+      </div>
+      <label>Email<input required type="email" name="email" placeholder="you@example.com"></label>
+      <div class="formrow">
+        <label>Service<select name="service"><option>Air-conditioning repair</option><option>HVAC maintenance</option><option>Construction</option><option>Property improvement</option><option>Repair and maintenance</option><option>Other</option></select></label>
+        <label>Timing<select name="timing"><option>As soon as possible</option><option>Within a few days</option><option>Within 1–2 weeks</option><option>Flexible</option></select></label>
+      </div>
+      <label>Project details<textarea required name="message" rows="7" placeholder="Tell us what you need..."></textarea></label>
+      <button class="btn primary" type="submit">Prepare Email Request</button>
+      <div class="status" id="status"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footerflex">
+    <div><b>Leveron Investments LLC</b><br><small>Construction • HVAC • Maintenance</small></div>
+    <p>24044 Cinco Village Center Blvd., Suite 100, Katy, TX 77494</p>
+    <p>© <span id="year"></span> Leveron Investments LLC</p>
+  </div>
+</footer>
+
+<script>
+// EDIT THESE TWO VALUES BEFORE PUBLISHING:
+const BUSINESS_EMAIL = "";
+const BUSINESS_PHONE = "";
+
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("emailDisplay").textContent = BUSINESS_EMAIL || "Add your business email in the code";
+document.getElementById("phoneDisplay").textContent = BUSINESS_PHONE || "Add your business phone in the code";
+
+const menu = document.getElementById("menu");
+const nav = document.getElementById("nav");
+menu.addEventListener("click",()=>nav.classList.toggle("open"));
+document.querySelectorAll("#nav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  if(!this.checkValidity()){this.reportValidity();return;}
+  if(!BUSINESS_EMAIL){
+    document.getElementById("status").textContent="Add your real business email to BUSINESS_EMAIL near the bottom of index.html before publishing.";
+    return;
+  }
+  const d=new FormData(this);
+  const subject=encodeURIComponent("Website Service Request - "+d.get("service"));
+  const body=encodeURIComponent(
+    "SERVICE REQUEST — LEVERON INVESTMENTS LLC\n\n"+
+    "Name: "+d.get("name")+"\n"+
+    "Phone: "+d.get("phone")+"\n"+
+    "Email: "+d.get("email")+"\n"+
+    "Service: "+d.get("service")+"\n"+
+    "Preferred timing: "+d.get("timing")+"\n\n"+
+    "Project details:\n"+d.get("message")+"\n\n"+
+    "Leveron Investments LLC\n"+
+    "24044 Cinco Village Center Blvd., Suite 100\n"+
+    "Katy, TX 77494"
+  );
+  location.href=`mailto:${BUSINESS_EMAIL}?subject=${subject}&body=${body}`;
+});
+</script>
+</body>
+</html>
